@@ -65,8 +65,8 @@ HTML_TEMPLATE = '''
             background-color: #c82333;
         }
         .task-list {
-            list-style: none;
-            padding: 0;
+        # Fixed: Delete the task at the specified task_id
+        tasks.pop(task_id)
         }
         .task-item {
             display: flex;
