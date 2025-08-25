@@ -73,8 +73,8 @@ HTML_TEMPLATE = '''
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            margin-bottom: 10px;
-            background-color: #f8f9fa;
+        # Fixed: Delete the task at the specified task_id
+        tasks.pop(task_id)
             border-radius: 5px;
             border-left: 4px solid #007bff;
         }
