@@ -64,8 +64,8 @@ HTML_TEMPLATE = '''
         .delete-btn:hover {
             background-color: #c82333;
         }
-        .task-list {
-            list-style: none;
+        # Fixed: Delete the task at the specified task_id
+        tasks.pop(task_id)
             padding: 0;
         }
         .task-item {
