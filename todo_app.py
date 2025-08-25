@@ -67,9 +67,9 @@ HTML_TEMPLATE = '''
         .task-list {
             list-style: none;
             padding: 0;
-        }
-        .task-item {
-            display: flex;
+    if 0 <= task_id < len(tasks):
+        # Fixed: Delete the task at the specified task_id
+        tasks.pop(task_id)
             justify-content: space-between;
             align-items: center;
             padding: 15px;
